@@ -108,5 +108,3 @@ combined_gene_mutrate <-plot_grid(mutrates_stageless_plot, mutrates_early_late_p
                                   align="h", axis="t", nrow=3, ncol=1, rel_heights = c(0.3,1,1))
 
 combined_gene_mutrate
-
-ggsave("PRAD_figures/combined_gene_mutrate.png", width = 4.5, dpi=600, height = 9)
