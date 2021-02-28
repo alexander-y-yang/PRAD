@@ -62,7 +62,6 @@ waterfall_SPOP <- ggplot(epistatic_change_SPOP, aes(x= reorder(gene, change), y=
   scale_y_continuous(labels = scientific, breaks = c(-1e4, 0, 1e4), limits = c(-2e4, 2e4))
 
 waterfall_SPOP
-ggsave("PRAD_figures/epistasis/Top 25/waterfall_SPOP.png", width = 10, dpi=300, height = 7)
 
 ###TP53###
 
@@ -114,4 +113,3 @@ waterfall_TP53 <- ggplot(epistatic_change_TP53, aes(x= reorder(gene, change), y=
   scale_y_continuous(labels = scientific, breaks = c(-1e4, 0, 1e4), limits = c(-2e4, 2e4))
 
 waterfall_TP53
-ggsave("PRAD_figures/epistasis/Top 25/waterfall_TP53.png", width = 10, dpi=300, height = 7)
