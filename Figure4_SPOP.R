@@ -59,4 +59,3 @@ bargraph_SPOP_SI <- ggplot(data=PRAD_results_recurrent, aes(x=reorder(variant_na
   scale_y_continuous(labels=scientific, breaks = c(0, 5e4, 1e5, 1.5e5, 2e5))
 
 bargraph_SPOP_SI
-ggsave("PRAD_figures/SPOP/SPOP_recurrent_SI.png", width=9, height=6)
