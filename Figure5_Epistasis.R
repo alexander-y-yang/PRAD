@@ -24,7 +24,7 @@ for(x in SPOP_list){
   gene1_after_gene2 <- unlist(c(as.character("gene1_after_gene2"), as.numeric(PRAD_epistasis[x,5] - PRAD_epistasis[x,3])))
   gene2_after_gene1 <- unlist(c(as.character("gene2_after_gene1"), as.numeric(PRAD_epistasis[x,6] - PRAD_epistasis[x,4])))
   gene1_after_gene2[1] <- str_replace(gene1_after_gene2[1], "gene1", as.character(PRAD_epistasis[x,1]))
-  gene1_after_gene2[1] <- str_replace(gene1_after_gene2[1], "gene2", as.character(PRAD_epistasis[x,2]))
+  gene1_after_gene2[1] <- str_replace(gene1_after_gene2[1], "gene2", as.character (PRAD_epistasis[x,2]))
   gene2_after_gene1[1] <- str_replace(gene2_after_gene1[1], "gene1", as.character(PRAD_epistasis[x,1]))
   gene2_after_gene1[1] <- str_replace(gene2_after_gene1[1], "gene2", as.character(PRAD_epistasis[x,2]))
   epistatic_change_SPOP <- rbind(epistatic_change_SPOP, gene1_after_gene2, gene2_after_gene1)
