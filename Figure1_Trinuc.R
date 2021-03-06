@@ -2,6 +2,7 @@ library(cancereffectsizeR)
 library(ggplot2)
 library(cowplot)
 
+#Load in your file
 twostage_final <- load_cesa("twostage_final.rds")
 
 PRAD_analysis <- twostage_final
@@ -552,3 +553,5 @@ combined_trinuc_bar <-plot_grid(PRAD_trinuc_bar_early, PRAD_trinuc_bar_late, PRA
                                 align="h", axis="t", nrow=3, ncol=1, rel_heights = c(1,1,1))
 
 combined_trinuc_bar
+
+ggsave("PRAD_figures/combined_trinuc_bar.png", width=12, height=8)
